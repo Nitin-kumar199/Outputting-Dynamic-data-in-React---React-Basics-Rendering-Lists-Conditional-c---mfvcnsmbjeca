@@ -1,15 +1,15 @@
 import React,{useState,useEffect} from 'react'
 import '../styles/App.css';
 const App = () => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("____");
+  const [input, setInput] = useState("");
 
   const handleInputChange = (event) => {
-    setName(event.target.value);
+    setInput(event.target.value);
   };
 
   const handleButtonClick = () => {
-    const textElement = document.getElementById('text');
-    textElement.textContent = `Hello my name is ${name} and I study at Newton School`;
+   setName(input);
   };
 
   return (
