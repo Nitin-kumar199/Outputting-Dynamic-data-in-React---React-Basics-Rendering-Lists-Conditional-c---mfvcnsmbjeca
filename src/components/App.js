@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import '../styles/App.css';
 const App = () => {
-  const [name, setName] = useState("___");
+  const [name, setName] = useState("_____");
   const [input, setInput] = useState("");
-   const handleButtonClick = () => {
+   const handleButtonClick = (e) => {
    setName(input);
   };
   const handleInputChange = (event) => {
