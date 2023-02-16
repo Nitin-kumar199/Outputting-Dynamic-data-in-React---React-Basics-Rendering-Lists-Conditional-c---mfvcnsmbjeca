@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import '../styles/App.css';
 const App = () => {
-  const [name, setName] = useState("____");
+  const [name, setName] = useState("___");
   const [input, setInput] = useState("");
    const handleButtonClick = () => {
    setName(input);
